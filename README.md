@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FlexiNote
 
-## Getting Started
+FlexiNote is a beautifully crafted note-taking application built with Next.js, leveraging the power of Convex as the backend ORM and Clerk for seamless authentication. With an intuitive user interface and a rich-writing experience, FlexiNote empowers users to organize their thoughts, ideas, and tasks effortlessly.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Realtime Editing**: Collaborate with others in real-time on your notes, making it perfect for team projects or group brainstorming sessions.
+
+- **Seamless UI**: Experience a visually stunning and intuitive user interface designed to enhance productivity and user satisfaction.
+
+- **BlockNote Editor**: Enjoy the flexibility and versatility of the BlockNote Editor, allowing you to structure your notes precisely the way you want.
+
+- **Publishing**: Share your notes with others by publishing them, making them accessible to anyone who wants to read or use them.
+
+- **Infinite Nesting**: Utilize the power of recursive functions to create an infinite number of child notes within parent documents, enabling you to organize your thoughts hierarchically.
+
+- **Effortless Deletion**: Easily manage your notes with a seamlessly integrated deletion feature, ensuring that your workspace remains clutter-free.
+
+- **Rich-Writing Experience**: Immerse yourself in a rich-writing experience, complete with formatting options, media embedding, and more, making note-taking a pleasure.
+
+## Technologies Used
+
+- Next.js: A powerful React framework for building server-side rendered applications.
+- Convex: A backend ORM providing a robust data management layer.
+- Clerk: A user authentication solution offering secure and easy-to-use authentication features.
+- Edge-Store: A file storage solution for handling file uploads seamlessly.
+- BlockNote Editor: A versatile and customizable editor for structuring your notes effectively.
+
+## Installation
+
+To get started with FlexiNote, follow these simple steps:
+
+1. Clone the repository:
+
+```
+git clone <repository_url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Set up Convex:
+   - Set up your Convex instance following the instructions provided in the Convex documentation.
+   - Store your Convex API key securely in the `.env.local` file:
 
-## Learn More
+   ```
+   CONVEX_API_KEY=your_convex_api_key
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Set up Clerk:
+   - Set up your Clerk instance following the instructions provided in the Clerk documentation.
+   - Store your Clerk API key securely in the `.env.local` file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   CLERK_API_KEY=your_clerk_api_key
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Set up Edge-Store:
+   - Set up your Edge-Store instance following the instructions provided in the Edge-Store documentation.
+   - Store your Edge-Store API key securely in the `.env.local` file:
 
-## Deploy on Vercel
+   ```
+   EDGE_STORE_API_KEY=your_edge_store_api_key
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run dev
+```
+
+7. Access FlexiNote in your browser at `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Whether you want to report a bug, request a feature, or submit a pull request, your input is appreciated. Please refer to our [Contribution Guidelines](CONTRIBUTING.md) for more information.
+
+
+
+Happy Note-Taking with FlexiNote! 📝✨
